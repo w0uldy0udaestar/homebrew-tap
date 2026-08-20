@@ -7,14 +7,12 @@ cask "mini-golf" do
   desc "Side-view mini golf overlay that plays across the bottom of your desktop"
   homepage "https://github.com/w0uldy0udaestar/mini-golf"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "MiniGolf.app"
 
   caveats <<~EOS
     서명되지 않은 앱입니다. 첫 실행이 막히면:
       xattr -cr "#{appdir}/MiniGolf.app"
-    또는 설치할 때 격리를 건너뛰세요:
-      brew install --cask --no-quarantine w0uldy0udaestar/tap/mini-golf
   EOS
 end
