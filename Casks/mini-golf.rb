@@ -1,6 +1,6 @@
 cask "mini-golf" do
-  version "0.8.1"
-  sha256 "bc0e5a94916779d3418bea71ec4532a0fa4fd78ca933eefe76319f7ae4778f53"
+  version "0.8.2"
+  sha256 "78993af9a1999b79ac9dcb348fe57fbe1d191e716edeaf4884dcf1c3a83966b7"
 
   url "https://github.com/w0uldy0udaestar/mini-golf/releases/download/v#{version}/MiniGolf-#{version}.zip"
   name "MiniGolf"
