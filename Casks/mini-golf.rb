@@ -13,6 +13,6 @@ cask "mini-golf" do
 
   caveats <<~EOS
     서명되지 않은 앱입니다. 첫 실행이 막히면:
-      xattr -cr "#{appdir}/MiniGolf.app"
+      xattr -dr com.apple.quarantine "#{appdir}/MiniGolf.app"
   EOS
 end
